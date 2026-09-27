@@ -147,38 +147,66 @@ This repository adheres to production-grade engineering principles for LLM appli
 ```mermaid
 flowchart TB
     subgraph W1["Week 1: Reflex & ReAct"]
-        U1[User Input] --> R1[Reflex Filter]
-        R1 --> L1[ReAct Loop: Thought -> Action -> Observation]
-        L1 --> O1[Final Lead Decision]
+        U1["User Input"] --> R1["Reflex Filter"]
+        R1 --> L1["ReAct Loop: Thought -> Action -> Observation"]
+        L1 --> O1["Final Lead Decision"]
     end
 
     subgraph W2["Weeks 2-3: Grounded RAG"]
-        U2[Query] --> RT2[Retriever]
-        RT2 --> GR2[Groundedness Verification]
-        GR2 --> AG2[LCEL Generator]
+        U2["Query"] --> RT2["Retriever"]
+        RT2 --> GR2["Groundedness Verification"]
+        GR2 --> AG2["LCEL Generator"]
     end
 
     subgraph W4["Week 4: Planner-Executor-Critic"]
-        U4[Goal] --> PL4[Planner Node]
-        PL4 --> EX4[Executor Nodes]
-        EX4 --> CR4{Critic Node}
-        CR4 -- Revisions --> PL4
-        CR4 -- Approved --> SY4[Synthesizer]
+        U4["Goal"] --> PL4["Planner Node"]
+        PL4 --> EX4["Executor Nodes"]
+        EX4 --> CR4{"Critic Node"}
+        CR4 -- "Revisions" --> PL4
+        CR4 -- "Approved" --> SY4["Synthesizer"]
     end
 
     subgraph W5["Week 5: Multimodal & HITL"]
-        U5[Voice/Text Input] --> SG5[Subgraphs]
-        SG5 --> INT5{HITL Interrupt}
-        INT5 -- Human Approves --> EX5[Execute Transaction]
-        INT5 -- Human Modifies --> SG5
+        U5["Voice/Text Input"] --> SG5["Subgraphs"]
+        SG5 --> INT5{"HITL Interrupt"}
+        INT5 -- "Human Approves" --> EX5["Execute Transaction"]
+        INT5 -- "Human Modifies" --> SG5
     end
 
     subgraph W6["Week 6: Protocols (MCP & A2A)"]
-        A_BUY[Buyer Agent] <-->|MCP / A2A Protocol FSM| A_SELL[Seller Agent]
+        A_BUY["Buyer Agent"] <-->|"MCP / A2A Protocol FSM"| A_SELL["Seller Agent"]
     end
 ```
 
 ---
+
+```mermaid
+flowchart TD
+    subgraph P1["1. ReAct / Tool-Loop Pattern (e.g. olexa_ref)"]
+        A1["User Goal"] --> B1["LLM Thought"]
+        B1 --> C1["Tool Action"]
+        C1 --> D1["Observation"]
+        D1 --> B1
+        B1 --> E1["Final Response"]
+    end
+
+    subgraph P2["2. Evaluator-Optimizer / Self-Correction (e.g. tfs_agent)"]
+        A2["Generator Node"] --> B2["Draft Output"]
+        B2 --> C2{"Validation / Critic"}
+        C2 -- "Errors / Feedback" --> D2["Correction Node"]
+        D2 --> A2
+        C2 -- "Valid" --> E2["Approved Output"]
+    end
+
+    subgraph P3["3. Planner-Executor-Critic (Week 4 Focus)"]
+        A3["Complex Goal"] --> B3["Planner Agent"]
+        B3 --> C3["Subtask 1: Specialist A"]
+        B3 --> D3["Subtask 2: Specialist B"]
+        C3 --> E3["Critic Agent"]
+        D3 --> E3
+        E3 --> F3["Synthesizer"]
+    end
+```
 
 ## ⚡ Environment Setup & Installation
 

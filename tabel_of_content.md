@@ -4,90 +4,90 @@ A structured roadmap covering Agentic AI from foundational reflex agents to prod
 
 ---
 
-## 🔹 [Week 1: Agentic AI Foundations & Reflex Agents](file:///Users/viswa/projects/FDE_kickstart_interview/week-01-foundations-reflex-agents/README.md)
+## 🔹 Week 1: Agentic AI Foundations & Reflex Agents
 
 - The agent equation: prompt, tools, memory, and LLM
 - The ReAct loop and the five core agentic design patterns
 - Agentic-vs-autonomous decision-making and prompt engineering
-- **Live Project:** [CRM Lead Qualifier Agent](file:///Users/viswa/projects/FDE_kickstart_interview/week-01-foundations-reflex-agents/crm_lead_qualifier/)
+- **Live Project:** [CRM Lead Qualifier Agent]
 - **Outcome:** Decide when a task needs an agent — and wire up the first one that works.
 
 ---
 
-## 🔹 [Weeks 2–3: RAG-Powered Knowledge Agents](file:///Users/viswa/projects/FDE_kickstart_interview/weeks-02-03-rag-knowledge-agents/README.md)
+## 🔹 Weeks 2–3: RAG-Powered Knowledge Agents
 
 - Retrieve → augment → generate pipelines with LangChain LCEL
 - Multi-turn RAG with history and hallucination prevention
 - Retrieval and generation metrics: Precision@K, groundedness
-- **Live Project:** [Grounded IT Support Knowledge Assistant](file:///Users/viswa/projects/FDE_kickstart_interview/weeks-02-03-rag-knowledge-agents/it_support_assistant/)
+- **Live Project:** [Grounded IT Support Knowledge Assistant]
 - **Outcome:** Ship a RAG agent that answers only from its sources and proves it with metrics.
 
 ---
 
-## 🔹 [Week 4: Multi-Agent Systems (Planner–Executor–Critic)](file:///Users/viswa/projects/FDE_kickstart_interview/week-04-multi-agent-systems/README.md)
+## 🔹 Week 4: Multi-Agent Systems (Planner–Executor–Critic)
 
 - Role-based design: orchestrator, planner, synthesizer
 - Task decomposition, routing, and delegation
 - LangGraph state, nodes, edges, and checkpointer persistence
-- **Live Project:** [Multi-Agent Travel Planner](file:///Users/viswa/projects/FDE_kickstart_interview/week-04-multi-agent-systems/travel_planner/)
+- **Live Project:** [Multi-Agent Travel Planner]
 - **Outcome:** Split a task that breaks one agent across a team that doesn't.
 
 ---
 
-## 🔹 [Week 5: Conversational & Multimodal Agents](file:///Users/viswa/projects/FDE_kickstart_interview/week-05-conversational-multimodal-hitl/README.md)
+## 🔹 Week 5: Conversational & Multimodal Agents
 
 - Cascaded STT→LLM→TTS vs. realtime speech-to-speech trade-offs
 - Reusable LangGraph subgraphs for coordination
 - Human-in-the-loop approve, review-and-edit, and interrupt patterns
-- **Live Project:** [Voice-Enabled E-Commerce Assistant with HITL](file:///Users/viswa/projects/FDE_kickstart_interview/week-05-conversational-multimodal-hitl/ecommerce_hitl_assistant/)
+- **Live Project:** [Voice-Enabled E-Commerce Assistant with HITL]
 - **Outcome:** Put a human in the loop without killing the conversation's UX.
 
 ---
 
-## 🔹 [Week 6: Agent Communication Protocols (MCP, A2A, ACP)](file:///Users/viswa/projects/FDE_kickstart_interview/week-06-agent-communication-protocols/README.md)
+## 🔹 Week 6: Agent Communication Protocols (MCP, A2A, ACP)
 
 - Structured tool access via MCP and FastMCP servers
 - Reliable messaging with finite state machines and validated transitions
 - Networked agents over the A2A protocol via Google ADK
-- **Live Project:** [Real Estate Negotiation Simulator](file:///Users/viswa/projects/FDE_kickstart_interview/week-06-agent-communication-protocols/real_estate_negotiation/)
+- **Live Project:** [Real Estate Negotiation Simulator]
 - **Outcome:** Kill the ten failure modes that come from agents talking in free text.
 
 ---
 
-## 🔹 [Week 7: Hybrid Search & Retrieval](file:///Users/viswa/projects/FDE_kickstart_interview/week-07-hybrid-search-retrieval/README.md)
+## 🔹 Week 7: Hybrid Search & Retrieval
 
 - Sparse vs. dense vectors; k-NN, ANN, and HNSW
 - SPLADE for learned lexical matching
 - Hybrid search with Reciprocal Rank Fusion in Qdrant
-- **Live Project:** [Hybrid Product Search Agent (SPLADE + BGE + RRF)](file:///Users/viswa/projects/FDE_kickstart_interview/week-07-hybrid-search-retrieval/hybrid_product_search/)
+- **Live Project:** [Hybrid Product Search Agent (SPLADE + BGE + RRF)]
 - **Outcome:** Beat pure-vector recall by fusing lexical and semantic retrieval.
 
 ---
 
-## 🔹 [Week 8: Agent Observability, Evaluation & Safety](file:///Users/viswa/projects/FDE_kickstart_interview/week-08-observability-evals-safety/README.md)
+## 🔹 Week 8: Agent Observability, Evaluation & Safety
 
 - LangSmith tracing and eval datasets from curated traces
 - LLM-as-judge, DeepEval metrics, and Guardrails AI
 - PII redaction with Presidio; cost control via routing, caching, and batching
-- **Live Project:** [Production-Ready Fintech Support Agent](file:///Users/viswa/projects/FDE_kickstart_interview/week-08-observability-evals-safety/fintech_support_agent/)
+- **Live Project:** [Production-Ready Fintech Support Agent]
 - **Outcome:** Cut an agent's cost-per-query while proving its quality didn't drop.
 
 ---
 
-## 🔹 [Week 9: Fine-Tuning & Domain Adaptation](file:///Users/viswa/projects/FDE_kickstart_interview/week-09-fine-tuning-domain-adaptation/README.md)
+## 🔹 Week 9: Fine-Tuning & Domain Adaptation
 
 - The prompt-vs-RAG-vs-fine-tune escalation framework
 - The PEFT landscape: LoRA, QLoRA, prefix tuning, and adapters
 - 4-bit quantization, TRL SFTTrainer, and deployment to the HF Hub
-- **Live Project:** [Fine-Tuned Healthcare Q&A Agent](file:///Users/viswa/projects/FDE_kickstart_interview/week-09-fine-tuning-domain-adaptation/healthcare_qa_agent/)
+- **Live Project:** [Fine-Tuned Healthcare Q&A Agent]
 - **Outcome:** Know when fine-tuning beats prompting — then train and ship an adapter.
 
 ---
 
-## 🔹 [Weeks 10–11: Capstone — Enterprise Multi-Agent System](file:///Users/viswa/projects/FDE_kickstart_interview/weeks-10-11-capstone-enterprise-system/README.md)
+## 🔹 Weeks 10–11: Capstone — Enterprise Multi-Agent System
 
 - Own a real enterprise problem from architecture to build
 - Integrate retrieval, orchestration, evals, safety, and cost monitoring
 - Defend reliability, latency, and cost the way production systems are reviewed
-- **Live Project:** [Enterprise Multi-Agent Platform (LangGraph, LangChain, Streamlit, AWS)](file:///Users/viswa/projects/FDE_kickstart_interview/weeks-10-11-capstone-enterprise-system/enterprise_agent_system/)
+- **Live Project:** [Enterprise Multi-Agent Platform (LangGraph, LangChain, Streamlit, AWS)]
 - **Outcome:** Stand up a production-grade agentic system you can defend in review.
