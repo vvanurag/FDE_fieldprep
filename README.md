@@ -180,33 +180,6 @@ flowchart TB
 
 ---
 
-```mermaid
-flowchart TD
-    subgraph P1["1. ReAct / Tool-Loop Pattern (e.g. olexa_ref)"]
-        A1["User Goal"] --> B1["LLM Thought"]
-        B1 --> C1["Tool Action"]
-        C1 --> D1["Observation"]
-        D1 --> B1
-        B1 --> E1["Final Response"]
-    end
-
-    subgraph P2["2. Evaluator-Optimizer / Self-Correction (e.g. tfs_agent)"]
-        A2["Generator Node"] --> B2["Draft Output"]
-        B2 --> C2{"Validation / Critic"}
-        C2 -- "Errors / Feedback" --> D2["Correction Node"]
-        D2 --> A2
-        C2 -- "Valid" --> E2["Approved Output"]
-    end
-
-    subgraph P3["3. Planner-Executor-Critic (Week 4 Focus)"]
-        A3["Complex Goal"] --> B3["Planner Agent"]
-        B3 --> C3["Subtask 1: Specialist A"]
-        B3 --> D3["Subtask 2: Specialist B"]
-        C3 --> E3["Critic Agent"]
-        D3 --> E3
-        E3 --> F3["Synthesizer"]
-    end
-```
 
 ## ⚡ Environment Setup & Installation
 
