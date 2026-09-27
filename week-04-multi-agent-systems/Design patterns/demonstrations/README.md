@@ -17,6 +17,12 @@ This folder contains focused, production-grade demonstrations for the **6 fundam
 
 ---
 
+## 📚 Ecosystem & Architecture Reference
+
+- **[Industry-Standard Libraries & Frameworks for Agentic AI](industry_standard_agentic_ai_libraries.md)**: Deep dive into the 6 layers of the modern agent stack (Orchestration, Protocols, Schemas, Observability, Guardrails, and Vector DBs).
+
+---
+
 ## 🚀 Execution Guide
 
-Each demonstration includes standalone runnable scripts (`demo.py` or `main.py`) with test inputs and verbose execution tracing.
+Each demonstration includes standalone runnable scripts (`main.py`) with test inputs and verbose execution tracing.
