@@ -59,7 +59,7 @@ $$\text{Agent Step} = \text{Thought (Reasoning)} \longrightarrow \text{Action (T
                                     │ (When model determines task is complete)
                                     ▼
        ┌──────────────────────────────────────────────────────────┐
-       │ 5. Final Answer: Formulate grounded response for user   │
+       │ 5. Final Answer: Formulate grounded response for user    │
        └──────────────────────────────────────────────────────────┘
 ```
 
